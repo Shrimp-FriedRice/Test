@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Identitas Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 320px;
+            background-color: #ffffff;
+            border: 2px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Bagian Atas: Profil & Ilustrasi */
+        .top-section {
+            background-color: #e3eaf2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            position: relative;
+        }
+
+        .avatar-frame {
+            width: 120px;
+            height: 140px;
+            border: 2px solid #333;
+            border-radius: 60px 60px 0 0; /* Bentuk lengkung atas seperti sketsa */
+            margin: 0 auto;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-frame img {
+            width: 80%;
+            height: auto;
+        }
+
+        /* Dekoras Tambahan (Tanaman & Lampu) */
+        .decor-left, .decor-right {
+            font-size: 20px;
+            position: absolute;
+            bottom: 10px;
+        }
+        .decor-left { left: 20px; }
+        .decor-right { right: 20px; }
+
+        /* Bagian Bawah: Informasi Diri */
+        .bottom-section {
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+            align-items: center;
+            position: relative;
+        }
+
+        .illustration {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .info {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .info p {
+            margin: 4px 0;
+        }
+
+        /* Dekorasi Bulan & Bintang di pojok kanan bawah */
+        .decor-moon {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            font-size: 18px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Bagian Atas (Foto Profil) -->
+        <div class="top-section">
+            <span class="decor-left">🪴</span>
+            <div class="avatar-frame">
+                <span style="font-size: 50px;">👤</span>
+            </div>
+            <span class="decor-right">🏮</span>
+        </div>
+
+        <!-- Bagian Bawah (Detail Biodata) -->
+        <div class="bottom-section">
+            <div class="illustration">
+                🏰<br>[Gambar]
+            </div>
+
+            <div class="info">
+                <p><strong>Nama:</strong> Cruz Pradana</p>
+                <p><strong>Kelas:</strong> XI - F</p>
+                <p><strong>Hobi:</strong> Menggambar, menulis cerita, bermain game</p>
+            </div>
+
+            <div class="decor-moon">🌙✨</div>
+        </div>
+    </div>
+
+</body>
+</html>
